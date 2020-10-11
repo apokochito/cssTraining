@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS Basics</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/basics.css" rel="stylesheet">
+</head>
+
+<body>
+    <h3>CSS is not a programming language, it's a style sheet language</h3>
+    <hr>
+    <div style="padding-left: 5%;">
+        <h4>1. Anatomy of a CSS ruleset</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <p>This is a pharagraph</p>
+            <pre>
+                -- HTML --
+                &lt;p&gt; This is a pharagraph &lt;/p&gt;
+
+                -- CSS --
+                p {
+                    color: red;
+                  }
+
+                p &#8594; Selector &#8594; HTML element
+                color &#8594; Property
+                red &#8594; Property value
+                color: red; &#8594; Declaration &#8594; Rule
+            </pre>
+            <h4>Description</h4>
+            <h5>The whole structure is called a ruleset (The term ruleset is often referred to as just rule).</h5>
+            <h5>Each ruleset must be wrapped in curly braces. ({})</h5>
+        </div>
+        <h4>2. Selecting multiple elements</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <ul>
+                <li>First <span>element</span> of the list</li>
+                <li>Second <span>element</span> of the list</li>
+            </ul>
+            <ol>
+                <li>First <span>element</span></li>
+                <li>Second <span>element</span></li>
+            </ol>
+            <pre>
+                -- HTML --
+                &lt;ul&gt;
+                    &lt;li&gt;First &lt;span&gt;element&lt;/span&gt; of the list&lt;/li&gt;
+                    &lt;li&gt;Second &lt;span&gt;element&lt;/span&gt; of the list&lt;/li&gt;
+                &lt;ul&gt;
+
+                &lt;ol&gt;
+                    &lt;li&gt;First &lt;span&gt;element&lt;/span&gt; of the list&lt;/li&gt;
+                    &lt;li&gt;Second &lt;span&gt;element&lt;/span&gt; of the list&lt;/li&gt;
+                &lt;ol&gt;
+
+                -- CSS --
+                div ul li span {
+                    color: blue;
+                }
+
+                div ol li, span {
+                    color: purple;
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>You can select multiple elements and apply a single ruleset to all of them. (ordered list)</h5>
+            <h5>You can navigate some elements to select only the one you need to modify. (unordered list)</h5>
+        </div>
+        <h4>3. Different types of selectors</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <p id="this-is-my-id">This is my p element</p>
+            <h4>Description</h4>
+            <pre>
+                -- HTML --
+                &lt;p id="this-is-my-id"&gt; This is my p element &lt;/p&gt;
+
+                -- CSS --
+                #this-is-my-id {
+                    color:green;
+                }
+
+                Element selector &#8594; &lt;p&gt;
+                ID selector &#8594; #my-id
+                Class selector &#8594; .my-class
+                Attribute selector &#8594; img[src]
+                Pseudo-class selector &#8594; a:hover
+            </pre>
+        </div>
+        <h4>4. Fonts and text</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+        </div>
+        <h4>5. All about boxes</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+        </div>
+        <h4>6. Styling the body</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+        </div>
+        <h4>7. Positioning and styling the main page title</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+        </div>
+        <h4>8. Centering the image</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+        </div>
+    </div>
+</body>
+
+</html>
