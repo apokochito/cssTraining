@@ -117,59 +117,67 @@
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <pre>
-                -- HTML --
-
-
                 -- CSS --
+                html {
+                    background-color: #dce485;
+                  }
                 
             </pre>
             <h4>Description</h4>
-            <h5></h5>
+            <h5>CSS layout is mostly based on the box model.</h5>
+            <h5>Padding, the space around the content. In the example below, it is the space around the paragraph text.</h5>
+            <h5>Border, the solid line that is just outside the padding.</h5>
+            <h5>Margin, the space around the outside of the border.</h5>
         </div>
 
         <h4>6. Styling the body</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <pre>
-                -- HTML --
-
-
                 -- CSS --
-                
+                body {
+                    width: 600px;
+                    margin: 0 auto;
+                    background-color: #FF9500;
+                    padding: 0 20px 20px 20px;
+                    border: 5px solid white;
+                }
             </pre>
-            <h4>Description</h4>
-            <h5></h5>
-            <h5></h5>
         </div>
 
         <h4>7. Positioning and styling the main page title</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
+            <h1>Title</h1>
             <pre>
                 -- HTML --
-
+                &lt;h1&gt;Title&lt;/h1&gt;
 
                 -- CSS --
-                
+                h1 {
+                    margin: 0;
+                    padding: 20px 0;    
+                    color: #00539F;
+                    text-shadow: 3px 3px 1px black;
+                  }
             </pre>
             <h4>Description</h4>
-            <h5></h5>
-            <h5></h5>
+            <h5>Text-shadow applies a shadow to the text content of the element.</h5>
         </div>
 
-        <h4>8. Centering the image</h4>
+        <h4>8. Centering an image</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <pre>
-                -- HTML --
-
-
                 -- CSS --
-                
+                img {
+                    display: block;
+                    margin: 0 auto;
+                  }
             </pre>
             <h4>Description</h4>
-            <h5></h5>
-            <h5></h5>
+            <h5>We could use the margin: 0 auto trick again as we did for the body. But there are differences that require an additional setting to make the CSS work.</h5>
+            <h5>The &lt;body&gt; is a block element, meaning it takes up space on the page. A block element can have margin and other spacing values applied to it. In contrast, images are inline elements. It is not possible to apply margin or spacing values to inline elements. So to apply margins to the image, we must give the image block-level behavior using display: block;.</h5>
         </div>
     </div>
 </body>
