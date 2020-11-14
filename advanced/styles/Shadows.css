@@ -1,3 +1,8 @@
 /* 1 */
-
+#shadow1 {
+    box-shadow: 5px 5px 3px 1px #999;
+}
+#shadow2 {
+box-shadow: inset 0 0 7px 5px #444;
+}
 /* 2 */
