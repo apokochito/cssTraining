@@ -10,32 +10,79 @@
 
 <body>
   <h3>CSS is not a programming language, it's a style sheet language</h3>
-    <hr>
+  <hr>
+  <div style="padding-left: 5%;">
+    <h4>Selectors: Universal selectors</h4>
     <div style="padding-left: 5%;">
-      <h4>Selectors: Universal selectors</h4>
-        <div style="padding-left: 5%;">
-            <h4>Example</h4>
-            <pre>
+      <h4>Example</h4>
+      <pre>
                 -- CSS --
                 * {
                   margin: 0;
                   padding: 0;
-              }              
+                }
+                #contact * {
+                  display: block;
+                }     
             </pre>
-            <h4>Description</h4>
-            <h5>You can target everything under the sun.</h5>
-        </div>
-        
-        <h4>Selectors: </h4>
-        <div style="padding-left: 5%;">
-            <h4>Example</h4>
-            <pre>
-                -- CSS --
-            </pre>
-            <h4>Description</h4>
-            <h5></h5>
-        </div>
+      <h4>Description</h4>
+      <h5>You can target everything under the sun.</h5>
     </div>
+
+    <h4>Selectors: Child selectors</h4>
+    <div style="padding-left: 5%;">
+      <h4>Example</h4>
+      <ul id="genus_examples">
+        <li>Cats
+          <ul>
+            <li>Panthera</li>
+            <li>Felis</li>
+            <li>Neofelis</li>
+          </ul>
+        </li>
+        <li>Apes
+          <ul>
+            <li>Pongo</li>
+            <li>Pan</li>
+            <li>Homo</li>
+          </ul>
+        </li>
+      </ul>
+      <pre>
+                -- CSS --
+                #genus_examples > li { border: 1px solid red }
+            </pre>
+      <h4>Description</h4>
+      <h5></h5>
+    </div>
+
+    <h4>Selectors: Adjacent selectors</h4>
+    <div style="padding-left: 5%;">
+      <h4>Example</h4>
+      <ul id="genus_examples">
+        <li>Cats
+          <ul>
+            <li>Panthera</li>
+            <li>Felis</li>
+            <li>Neofelis</li>
+          </ul>
+        </li>
+        <li>Apes
+          <ul>
+            <li>Pongo</li>
+            <li>Pan</li>
+            <li>Homo</li>
+          </ul>
+        </li>
+      </ul>
+      <pre>
+                -- CSS --
+                #genus_examples > li { border: 1px solid red }
+            </pre>
+      <h4>Description</h4>
+      <h5>A greater-than symbol (“>”) can be used to specify something that is a child of something else, that is, something immediately nested within something.</h5>
+    </div>
+  </div>
 </body>
 
 </html>

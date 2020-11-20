@@ -1,6 +1,16 @@
 /* 1 */
+
 * {
-    margin: 0;
-    padding: 0;
+    margin: 3px;
+    padding: 3px;
 }
+
+#contact * {
+    display: block;
+}
+
 /* 2 */
+
+#genus_examples>li {
+    border: 1px solid red
+}
