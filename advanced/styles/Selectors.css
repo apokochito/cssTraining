@@ -14,3 +14,9 @@
 #genus_examples>li {
     border: 1px solid red
 }
+
+/* 3 */
+
+h5+p {
+    color: #459;
+}

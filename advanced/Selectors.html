@@ -59,28 +59,23 @@
     <h4>Selectors: Adjacent selectors</h4>
     <div style="padding-left: 5%;">
       <h4>Example</h4>
-      <ul id="genus_examples">
-        <li>Cats
-          <ul>
-            <li>Panthera</li>
-            <li>Felis</li>
-            <li>Neofelis</li>
-          </ul>
-        </li>
-        <li>Apes
-          <ul>
-            <li>Pongo</li>
-            <li>Pan</li>
-            <li>Homo</li>
-          </ul>
-        </li>
-      </ul>
+      <div style="padding-left: 5%;">
+        <h5>Hey</h5>
+        <p>You</p>
+        <p>Man</p>
+      </div>
       <pre>
-                -- CSS --
-                #genus_examples > li { border: 1px solid red }
-            </pre>
+        -- HTML --
+        &lt;h5&gt;Hey&lt;/h5&gt;
+        &lt;p&gt;You&lt;/p&gt;
+        &lt;p&gt;Man&lt;/p&gt;
+        
+        -- CSS --
+        h5 + p { font-weight: bold }
+      </pre>
       <h4>Description</h4>
-      <h5>A greater-than symbol (“>”) can be used to specify something that is a child of something else, that is, something immediately nested within something.</h5>
+      <h5>A plus sign (“+”) is used to target an adjacent sibling of an element, essentially, something immediately
+        following something.</h5>
     </div>
   </div>
 </body>
