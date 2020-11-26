@@ -49,12 +49,23 @@
         <h4>At-Rules: Embedding fonts</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
+            <p>Hey</p>
             <pre>
+                -- HTML --
+                &lt;p&gt;Hey&lt;/p&gt;
+
                 -- CSS --
+                @font-face {
+                    font-family: "font of all knowledge";
+                    src: url(fontofallknowledge.woff);
+                }
                 
+                p {
+                    font-family: "font of all knowledge", arial, sans-serif;
+                }
             </pre>
             <h4>Description</h4>
-            <h5></h5>
+            <h5>It creates a font named “font of all knowledge” using the font-family descriptor and links the font file “fontofallknowledge.woff” to that name using the src descriptor.</h5>
         </div>
     </div>
 </body>

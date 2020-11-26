@@ -3,16 +3,25 @@
 @import url(morestyles.css);
 
 /* 2 */
+
 @media print {
     body {
         font-size: 10pt;
         font-family: times, serif;
     }
-
+    
     #navigation {
         display: none;
-        border-color: blue;
     }
 }
 
 /* 3 */
+
+@font-face {
+    font-family: "font of all knowledge";
+    src: url(fontofallknowledge.woff);
+}
+
+p {
+    font-family: "font of all knowledge", arial, sans-serif;
+}
