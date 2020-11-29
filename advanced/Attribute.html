@@ -17,12 +17,16 @@
             <h4>Example</h4>
             <pre>
                 -- HTML --
-                
+                <p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
 
                 -- CSS --
+                abbr[title] {
+                  border-bottom: 1px dotted #ccc
+                }
             </pre>
             <h4>Description</h4>
             <h5>Attribute selectors allow you to style an element’s box based on the presence of an HTML attribute or of an attribute’s value.</h5>
+            <h5>This basically says “shove a dotted line underneath all abbreviations with a title attribute”.</h5>
         </div>
     </div>
 </body>
