@@ -15,9 +15,10 @@
       <h4>Attribute Selectors: With the attribute</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
+            <p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
             <pre>
                 -- HTML --
-                <p>I do <abbr title="Hypertext Markup Language">HTML</abbr></p>
+                &lt;p&gt;I do &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
 
                 -- CSS --
                 abbr[title] {
@@ -27,6 +28,24 @@
             <h4>Description</h4>
             <h5>Attribute selectors allow you to style an element’s box based on the presence of an HTML attribute or of an attribute’s value.</h5>
             <h5>This basically says “shove a dotted line underneath all abbreviations with a title attribute”.</h5>
+        </div>
+
+        <h4>Attribute Selectors: With the attribute and its value</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <input type="text" id="fid" name="fname">
+            <pre>
+                -- HTML --
+                &lt;input type="text" id="fid" name="fname"&gt;
+
+                -- CSS --
+                input[type=text] {
+                  width: 200px;
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>You can further specify that you want to style something with a specific attribute value.</h5>
+            <h5>This example will apply a width of 200 pixels only to input elements that are specified as being text boxes.</h5>
         </div>
     </div>
 </body>

@@ -5,3 +5,7 @@ abbr[title] {
 }
 
 /* 2 */
+
+input[type=text] {
+    width: 200px;
+}
