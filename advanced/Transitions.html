@@ -56,8 +56,37 @@
                 }
             </pre>
       <h4>Description</h4>
-      <h5>While “all” can be used in transition-property (or transition), you can tell a browser only to transition certain properties, by simply plonking in the property name you want to change.</h5>
-      <h5>If you want to target more than one property (without using “all”), you can offer up a comma-separated list with transition-property.</h5>
+      <h5>While “all” can be used in transition-property (or transition), you can tell a browser only to transition
+        certain properties, by simply plonking in the property name you want to change.</h5>
+      <h5>If you want to target more than one property (without using “all”), you can offer up a comma-separated list
+        with transition-property.</h5>
+    </div>
+
+    <h4>CSS Transitions: Easing</h4>
+    <div style="padding-left: 5%;">
+      <h4>Example</h4>
+      <a id="third">This is my link</a>
+      <pre>
+                  -- HTML --
+                  &lt;a id="third"&gt;This is my link&lt;/a&gt;
+  
+                  -- CSS --
+                  div div #third {
+                    color: rgba(35, 199, 211, 0.904);
+                    transition: .5s;
+                    transition-property: color;
+                    transition-timing-function: ease-in;
+                  }
+                
+                  div div #third:hover {
+                    color: rgb(104, 28, 134);
+                  }
+              </pre>
+      <h4>Description</h4>
+      <h5>It effectively states how the browser should deal with the intermediate states of the transition.</h5>
+      <h5>ease produces a gradual acceleration at the start of the transition and a gradual deceleration at the end.
+      </h5>
+      <h5>linear maintains a constant speed throughout. Other values include ease-in and ease-out.</h5>
     </div>
   </div>
 </body>

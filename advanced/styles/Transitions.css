@@ -11,7 +11,7 @@ div div #first:hover {
 /* 2 */
 
 div div #second {
-    color: rgba(235,10,160,.5);
+    color: rgba(51, 19, 233, 0.5);
     transition: .5s;
     transition-property: color;
 }
@@ -21,3 +21,14 @@ div div #second:hover {
 }
 
 /* 3 */
+
+div div #third {
+    color: rgba(35, 199, 211, 0.904);
+    transition: .5s;
+    transition-property: color;
+    transition-timing-function: ease-in;
+}
+
+div div #third:hover {
+    color: rgb(104, 28, 134);
+}
