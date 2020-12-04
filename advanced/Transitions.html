@@ -10,28 +10,56 @@
 
 <body>
   <h3>CSS is not a programming language, it's a style sheet language</h3>
-    <hr>
+  <hr>
+  <div style="padding-left: 5%;">
+    <h4>CSS Transitions</h4>
     <div style="padding-left: 5%;">
-      <h4>CSS Transitions</h4>
-        <div style="padding-left: 5%;">
-            <h4>Example</h4>
-            <a>This is my link</a>
-            <pre>
+      <h4>Example</h4>
+      <a id="first">This is my link</a>
+      <pre>
                 -- HTML --
-                &lt;a&gt;This is my link&lt;/a&gt;
+                &lt;a id="first"&gt;This is my link&lt;/a&gt;
 
                 -- CSS --
                 a:link {
+                    transition: all .5s linear 0;
                     color: hsl(36,50%,50%);
                 }
                 a:hover {
                     color: hsl(36,100%,50%);
                 }
             </pre>
-            <h4>Description</h4>
-            <h5>Transitions allow you to easily animate parts of your design without the need for the likes of JavaScript.</h5>
-        </div>
+      <h4>Description</h4>
+      <h5>Transitions allow you to easily animate parts of your design without the need for the likes of JavaScript.
+      </h5>
+      <h5>The transition property here is saying it wants all properties transitioned over half a second in a linear
+        fashion with no delay.</h5>
     </div>
+
+    <h4>CSS Transitions: Targeting specific properties</h4>
+    <div style="padding-left: 5%;">
+      <h4>Example</h4>
+      <a id="second">This is my link</a>
+      <pre>
+                -- HTML --
+                &lt;a id="second"&gt;This is my link&lt;/a&gt;
+
+                -- CSS --
+                div div #second {
+                  color: rgba(235,10,160,.5);
+                  transition: .5s;
+                  transition-property: color;
+                }
+              
+                div div #second:hover {
+                  color: rgba(255,0,0,1);
+                }
+            </pre>
+      <h4>Description</h4>
+      <h5>While “all” can be used in transition-property (or transition), you can tell a browser only to transition certain properties, by simply plonking in the property name you want to change.</h5>
+      <h5>If you want to target more than one property (without using “all”), you can offer up a comma-separated list with transition-property.</h5>
+    </div>
+  </div>
 </body>
 
 </html>

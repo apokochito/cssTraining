@@ -1,8 +1,23 @@
 /* 1 */
-a:link {
+
+div div #first:link {
+    transition: all .5s linear 0;
     color: hsl(36,50%,50%);
 }
-a:hover {
+div div #first:hover {
     color: hsl(36,100%,50%);
 }
+
 /* 2 */
+
+div div #second {
+    color: rgba(235,10,160,.5);
+    transition: .5s;
+    transition-property: color;
+}
+
+div div #second:hover {
+    color: rgba(255,0,0,1);
+}
+
+/* 3 */
