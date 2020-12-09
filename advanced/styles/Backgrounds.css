@@ -1,0 +1,10 @@
+/* 1 */
+#div-background-tag {
+    height: 240px;
+    width: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEZNxsTzbHuDVkRbJPwt-voHJ2sJ8St3-JQ&usqp=CAU"), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnu4gGPDX8d8lnFbrgsJ-NPfUHkRotW3oHQ&usqp=CAU"), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTle1cN5zC4Ljy_A0jFO61eFSy8LjpRMXfMuA&usqp=CAU");
+    background-position: left, center, right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* 2 */
