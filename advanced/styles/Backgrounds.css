@@ -1,4 +1,5 @@
 /* 1 */
+
 #div-background-tag {
     height: 240px;
     width: auto;
@@ -8,3 +9,12 @@
 }
 
 /* 2 */
+
+#div-background {
+    height: 240%;
+    width: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBv42ua_scB09Ule9eHkJVHZo7FQa9zp1Eg&usqp=CAU");
+    background-size: contain;
+    display: list-item;
+    /*background-size: cover;*/
+ }

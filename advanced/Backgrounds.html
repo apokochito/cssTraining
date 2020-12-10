@@ -35,6 +35,28 @@
             <h5>CSS3 allows you to apply multiple background images to a single box by simply putting image locations in a comma-separated list.</h5>
         </div>
 
+        <h4>CSS Backgrounds: Size</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="div-background"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="div-background"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #div-background {
+                  height: 240%;
+                  width: auto;
+                  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBv42ua_scB09Ule9eHkJVHZo7FQa9zp1Eg&usqp=CAU");
+                  background-size: contain;
+                  display: list-item;
+                  /*background-size: cover;*/
+               }
+            </pre>
+            <h4>Description</h4>
+            <h5>The background-size property allows you to stretch or compress a background image.</h5>
+        </div>
+
     </div>
 </body>
 
