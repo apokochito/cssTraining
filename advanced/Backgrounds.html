@@ -57,6 +57,28 @@
             <h5>The background-size property allows you to stretch or compress a background image.</h5>
         </div>
 
+        <h4>CSS Backgrounds: Origin</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="div-back"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="div-back"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #div-back {
+                  height: 200px;
+                  width: 200px;
+                  border: 10px solid rgba(0,255,0,.5);
+                  padding: 20px;
+                  background: url("https://en.owl.institute/system/course_management/file/images/files/000/000/288/240-240/radial_gradient_diagonal_blau_rot.png?1505827421") 0 0 no-repeat;
+                  background-origin: padding-box;
+                  /*background-origin: border-box; */
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>It will cause the origin of the background image to be tucked up inside the border.</h5>
+        </div>
     </div>
 </body>
 

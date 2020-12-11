@@ -17,4 +17,16 @@
     background-size: contain;
     display: list-item;
     /*background-size: cover;*/
- }
+}
+
+/* 3 */
+
+#div-back {
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgba(0,255,0,.5);
+    padding: 20px;
+    background: url("https://en.owl.institute/system/course_management/file/images/files/000/000/288/240-240/radial_gradient_diagonal_blau_rot.png?1505827421") 0 0 no-repeat;
+    background-origin: padding-box;
+    /*background-origin: border-box; */
+}
