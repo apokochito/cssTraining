@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>main</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles/Backgrounds.css" rel="stylesheet">
+</head>
+
+<body>
+    <h3>CSS is not a programming language, it's a style sheet language</h3>
+    <hr>
+    <div style="padding-left: 5%;">
+        <h4>CSS Backgrounds: Multiples</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="div-background-tag"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="div-background-tag"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #div-background-tag {
+                    height: 240px;
+                    width: auto;
+                    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEZNxsTzbHuDVkRbJPwt-voHJ2sJ8St3-JQ&usqp=CAU"),
+                    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnu4gGPDX8d8lnFbrgsJ-NPfUHkRotW3oHQ&usqp=CAU"),
+                    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTle1cN5zC4Ljy_A0jFO61eFSy8LjpRMXfMuA&usqp=CAU");
+                    background-position: left, center, right;
+                    background-repeat: no-repeat, no-repeat, no-repeat;
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>CSS3 allows you to apply multiple background images to a single box by simply putting image locations in
+                a comma-separated list.</h5>
+        </div>
+
+    </div>
+</body>
+
+</html>
