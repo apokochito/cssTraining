@@ -8,3 +8,10 @@
 }
 
 /* 2 */
+
+#note2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(31, 155, 149);
+    transform: skew(20deg,10deg);
+}
