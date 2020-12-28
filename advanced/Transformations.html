@@ -21,7 +21,7 @@
                 &lt;div id="note"&gt;&lt;/div&gt;
 
                 -- CSS --
-                .note {
+                #note {
                     width: 300px;
                     height: 300px;
                     background: hsl(36,100%,50%);
@@ -30,7 +30,6 @@
             </pre>
             <h4>Description</h4>
             <h5>Manipulating a box over two dimensions, transform can be used to rotate, skew, scale and translate a box and its contents.</h5>
-            <h5></h5>
         </div>
 
         <h4>Transformations: Skewing</h4>
@@ -42,7 +41,7 @@
                 &lt;div id="note2"&gt;&lt;/div&gt;
 
                 -- CSS --
-                .note2 {
+                #note2 {
                     width: 300px;
                     height: 300px;
                     background: hsl(36,100%,50%);
@@ -51,7 +50,71 @@
             </pre>
             <h4>Description</h4>
             <h5>Skewing allows you to tip the horizontal and vertical.</h5>
-            <h5></h5>
+        </div>
+
+        <h4>Transformations: Scaling</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="note3"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="note3"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #note3 {
+                    width: 300px;
+                    height: 300px;
+                    background: hsl(36,100%,50%);
+                    transform: scale(2);
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>This will multiply the size by two. You can use any positive number, including a value less than “1”, such as “0.5”, if you want to use a shrink ray.</h5>
+            <h5>You can also scale the horizontal and vertical dimensions separately.</h5>
+        </div>
+        
+        <h4>Transformations: Translating</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="note4"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="note4"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #note4 {
+                    width: 300px;
+                    height: 300px;
+                    background: hsl(36,100%,50%);
+                    transform: translate(100px,200px);
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>You can shift a box horizontally and vertically using transform: translate.</h5>
+            <h5>Similar to position: relative; left: 100px; top: 200px;, this will move a box 100 pixels to the right and 200 pixels down.</h5>
+        </div>
+
+        <p>Yout can combine all above also, for ex. transform: rotate(-10deg) scale(2); / transform: matrix(2,-0.35,0.35,2,0,0);</p>
+
+        <h4>Transformations: Origin</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="note5"></div>
+            <pre>
+                -- HTML --
+                &lt;div id="note5"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #note5 {
+                    width: 300px;
+                    height: 300px;
+                    background: hsl(36,100%,50%);
+                    transform-origin: 0 0;
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>This is the origin of the transformation.</h5>
+            <h5>The object will move from the origin reference.</h5>
         </div>
     </div>
 </body>
