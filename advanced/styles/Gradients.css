@@ -1,4 +1,24 @@
+#box {
+    display: flex;
+}
+
 /* 1 */
+
+#linear {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: linear-gradient(yellow, red);
+}
+
+#linear2 {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: linear-gradient(to bottom right, orange, red);
+}
 
 /* 2 */
 

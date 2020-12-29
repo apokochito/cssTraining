@@ -12,22 +12,54 @@
   <h3>CSS is not a programming language, it's a style sheet language</h3>
     <hr>
     <div style="padding-left: 5%;">
-      <h4>Gradients: Linear gradients</h4>
+      <h4>Gradients: Radial</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
-            <div id="linear"></div>
+            <div id="box">
+              <div id="linear"></div><div id="linear2"></div>
+            </div>
             <pre>
                 -- HTML --
-                &lt;div id="linear"&gt;&lt;/div&gt;
+                &lt;div id="linear"&gt;&lt;/div&gt;&lt;div id="linear2"&gt;&lt;/div&gt;
 
                 -- CSS --
-                
+                #linear {
+                  width: 200px;
+                  height: 200px;
+                  background: linear-gradient(yellow, red);
+                }
+
+                #linear2 {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: linear-gradient(to bottom right, orange, red);
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>For an even spread of two colors, fading from one at the top to another at the bottom.</h5>
+            <h5>Or one corner, Or any angle that tickles your fancy.</h5>
+        </div>
+
+        <h4>Gradients: Radial gradients</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="box2">
+              <div id="radial"></div><div id="radial2"></div>
+            </div>
+            <pre>
+                -- HTML --
+                &lt;div id="radial"&gt;&lt;/div&gt;&lt;div id="radial2"&gt;&lt;/div&gt;
+
+                -- CSS --
+
             </pre>
             <h4>Description</h4>
             <h5></h5>
             <h5></h5>
         </div>
-
+         
     </div>
 </body>
 
