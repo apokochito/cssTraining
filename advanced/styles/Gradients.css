@@ -22,6 +22,38 @@
 
 /* 2 */
 
+#radial {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: radial-gradient(at top left, yellow, green);
+}
+
+#radial2 {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: radial-gradient(circle closest-side, yellow, green);
+}
+
 /* 3 */
+
+#colors {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: linear-gradient(red 0%, green 33.3%, blue 66.7%, black 100%)
+}
+
+#colors2 {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0;
+    background: radial-gradient(#06c 0, #fc0 50%, #039 100%)
+}
 
 /* 4 */

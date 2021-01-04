@@ -12,7 +12,7 @@
   <h3>CSS is not a programming language, it's a style sheet language</h3>
     <hr>
     <div style="padding-left: 5%;">
-      <h4>Gradients: Radial</h4>
+      <h4>Gradients: Linear</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <div id="box">
@@ -42,10 +42,10 @@
             <h5>Or one corner, Or any angle that tickles your fancy.</h5>
         </div>
 
-        <h4>Gradients: Radial gradients</h4>
+        <h4>Gradients: Radial</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
-            <div id="box2">
+            <div id="box">
               <div id="radial"></div><div id="radial2"></div>
             </div>
             <pre>
@@ -53,13 +53,75 @@
                 &lt;div id="radial"&gt;&lt;/div&gt;&lt;div id="radial2"&gt;&lt;/div&gt;
 
                 -- CSS --
-
+                #radial {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: radial-gradient(at top left, yellow, green);
+                }
+              
+                #radial2 {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: radial-gradient(circle closest-side, yellow, green);
+                }
             </pre>
             <h4>Description</h4>
-            <h5></h5>
-            <h5></h5>
+            <h5>Radial gradients, with one color starting from a central point and fading to another color.</h5>
+        </div>
+
+        <h4>Gradients: Color Stops</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="box">
+              <div id="colors"></div><div id="colors2"></div>
+            </div>
+            <pre>
+                -- HTML --
+                &lt;div id="colors"&gt;&lt;/div&gt;&lt;div id="colors2"&gt;&lt;/div&gt;
+
+                -- CSS --
+                #colors {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: linear-gradient(red 0%, green 33.3%, blue 66.7%, black 100%)
+                }
+              
+                #colors2 {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: radial-gradient(#06c 0, #fc0 50%, #039 100%)
+                }
+            </pre>
+            <h4>Description</h4>
+            <h5>You can specify exactly where in the gradient each color kicks in, straight after each color, starting at “0” and ending at “100%” (although lengths can also be used).</h5>
         </div>
          
+        <h4>Gradients: Repeating</h4>
+        <div style="padding-left: 5%;">
+            <h4>Example</h4>
+            <div id="box">
+              <div id=""></div><div id=""></div>
+            </div>
+            <pre>
+                -- HTML --
+                &lt;div id=""&gt;&lt;/div&gt;&lt;div id=""&gt;&lt;/div&gt;
+
+                -- CSS --
+                
+            </pre>
+            <h4>Description</h4>
+            <h5>.</h5>
+        </div>
+
+
     </div>
 </body>
 
