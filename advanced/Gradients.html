@@ -108,17 +108,31 @@
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <div id="box">
-              <div id=""></div><div id=""></div>
+              <div id="repeat"></div><div id="repeat2"></div>
             </div>
             <pre>
                 -- HTML --
-                &lt;div id=""&gt;&lt;/div&gt;&lt;div id=""&gt;&lt;/div&gt;
+                &lt;div id="repeat"&gt;&lt;/div&gt;&lt;div id="repeat2"&gt;&lt;/div&gt;
 
                 -- CSS --
-                
+                #repeat {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: repeating-linear-gradient(white, black 15px, white 30px);
+                }
+              
+                #repeat2 {
+                  width: 200px;
+                  height: 200px;
+                  margin: 2px;
+                  padding: 0;
+                  background: repeating-radial-gradient(black, black 15px, white 15px, white 30px);
+                }
             </pre>
             <h4>Description</h4>
-            <h5>.</h5>
+            <h5>A single gradient will fill a box with the previous methods but you can use “repeating-linear-gradient” and “repeating-linear-gradient” to build on the color stops and, well, repeat the gradient.</h5>
         </div>
 
 
