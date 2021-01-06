@@ -5,34 +5,38 @@
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="styles/RoundedCorners.css" rel="stylesheet">
+  <link href="styles/Queries.css" rel="stylesheet">
 </head>
 
 <body>
   <h3>CSS is not a programming language, it's a style sheet language</h3>
     <hr>
     <div style="padding-left: 5%;">
-      <h4>Rounded Corners: Border Radius?</h4>
+      <h4>Media Queries: Browser-size specific CSS</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
-            <div id="marilyn"></div>
+            <div id="media"></div>
             <pre>
                 -- HTML --
-                &lt;div id="marilyn"&gt;&lt;/div&gt;
+                &lt;div id="media"&gt;&lt;/div&gt;
 
                 -- CSS --
-                #marilyn {
-                  background: #233;
-                  width: 100px;
-                  height: 100px;
-                  border-radius: 20px;
+                #media {
+                    background-color: aquamarine;
+                    height: 30px;
+                    width: 1000px;
+                }
+                
+                @media screen and (max-width: 2000px) {
+                    #media { width: 10% }
                 }
             </pre>
             <h4>Description</h4>
-            <h5>The border-radius property can be used to add a corner to each corner of a box.</h5>
+            <h5>They're used to target styles at specific media, such as screen or print, have already been covered.</h5>
+            <h5>Screen-based media of a certain size.</h5>
         </div>
 
-        <h4>Rounded Corners: Multiple Values</h4>
+        <h4>Media Queries: </h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <div id="monroe"></div>
@@ -49,10 +53,10 @@
                 }
             </pre>
             <h4>Description</h4>
-            <h5>Radius can also be used to target specific corners.</h5>
+            <h5> .</h5>
         </div>
 
-        <h4>Rounded Corners: Ellipses</h4>
+        <h4>Media Queries: </h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
             <div id="nanoo"></div>
@@ -71,7 +75,7 @@
                 }
             </pre>
             <h4>Description</h4>
-            <h5>You can specify different horizontal and vertical radiiii by splitting values with a “/”.</h5>
+            <h5> .</h5>
         </div>
     </div>
 </body>
