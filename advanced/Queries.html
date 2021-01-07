@@ -36,24 +36,26 @@
             <h5>Screen-based media of a certain size.</h5>
         </div>
 
-        <h4>Media Queries: </h4>
+        <h4>Media Queries: Orientation-specific CSS</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
-            <div id="monroe"></div>
+            <div id="media2"></div>
             <pre>
                 -- HTML --
-                &lt;div id="monroe"&gt;&lt;/div&gt;
+                &lt;div id="media2"&gt;&lt;/div&gt;
 
                 -- CSS --
-                #monroe {
-                  background: #233;
-                  width: 100px;
-                  height: 100px;
-                  border-radius: 6px 12px 18px 24px;
+                #media2 { background-color: yellow;
+                          height: 30px; 
+                          width: 300px; 
+                }
+
+                @media screen and (orientation: portrait) {
+                    #media2 { height: 50px; width: 100px;}
                 }
             </pre>
             <h4>Description</h4>
-            <h5> .</h5>
+            <h5>This could be especially useful with mobile devices, it's very important specify which style apply to an specific orientation.</h5>
         </div>
 
         <h4>Media Queries: </h4>
@@ -65,14 +67,7 @@
                 &lt;div id="nanoo"&gt;&lt;/div&gt;
 
                 -- CSS --
-                #nanoo {
-                  background: #233;
-                  width: 100px;
-                  height: 150px;
-                  border-radius: 50px/100px;
-                  border-bottom-left-radius: 50px;
-                  border-bottom-right-radius: 50px;
-                }
+                
             </pre>
             <h4>Description</h4>
             <h5> .</h5>

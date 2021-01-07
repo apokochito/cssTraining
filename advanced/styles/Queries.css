@@ -10,3 +10,15 @@
 @media screen and (max-width: 2000px) {
     #media { width: 10% }
 }
+
+/* 2 */
+
+#media2 { background-color: yellow; height: 30px; width: 300px; }
+
+@media screen and (orientation: portrait) {
+
+    #media2 { height: 50px; width: 100px;}
+
+}
+
+/* 3 */
