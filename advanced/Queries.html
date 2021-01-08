@@ -58,19 +58,29 @@
             <h5>This could be especially useful with mobile devices, it's very important specify which style apply to an specific orientation.</h5>
         </div>
 
-        <h4>Media Queries: </h4>
+        <h4>Media Queries: Device-specific CSS</h4>
         <div style="padding-left: 5%;">
             <h4>Example</h4>
-            <div id="nanoo"></div>
+            <div id="media3"></div>
             <pre>
                 -- HTML --
-                &lt;div id="nanoo"&gt;&lt;/div&gt;
+                &lt;div id="media3"&gt;&lt;/div&gt;
 
                 -- CSS --
+                Width & Height by Device
+                @media screen and (min-device-height: 700px) and (min-device-width: 1200px) {
+                    #media3 { width: 100px; height: 100px; background-color: blue; }
+                }
                 
+                @media (device-pixel-ratio: 2) { /* */ }
+                @media screen and (resolution: 326dpi) { /* */ }
+                @media screen and (min-resolution: 96dpi) { /* */ }
+
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
             </pre>
             <h4>Description</h4>
-            <h5> .</h5>
+            <h5>You can specify the likes of the device’s screen dimensions and its pixel ratio.</h5>
+            <h5>Meta element will force a device to render a page at the width of the viewport.</h5>
         </div>
     </div>
 </body>

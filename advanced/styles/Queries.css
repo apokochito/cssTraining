@@ -22,3 +22,7 @@
 }
 
 /* 3 */
+
+@media screen and (min-device-height: 700px) and (min-device-width: 1200px) {
+    #media3 { width: 100px; height: 100px; background-color: blue;}
+}
