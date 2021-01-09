@@ -23,7 +23,7 @@
 5. At-Rules
 6. Attribute Selectors
 7. CSS Transitions
-8. Backgrounds: Multiples, Size, and Origin}
+8. Backgrounds: Multiples, Size, and Origin
 9. Transformations
 10. Gradients
 11. Media Queries
