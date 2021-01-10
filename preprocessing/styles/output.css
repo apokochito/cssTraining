@@ -1,3 +1,4 @@
+/* 1 */
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -5,6 +6,11 @@ body {
 
 p {
   margin-left: 15px;
+}
+
+/* 2 */
+#prep span {
+  color: blueviolet;
 }
 
 /*# sourceMappingURL=output.css.map */

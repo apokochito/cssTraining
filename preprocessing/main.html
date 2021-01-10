@@ -25,21 +25,40 @@
         <div style="padding-left: 5%;">
             <pre>
                 -- Command --
-                $ sass --watch input.scss output.css
+                  $ sass --watch input.scss output.css
 
-                -- SASS --
-                $font-stack:    Helvetica, sans-serif;
-                $primary-color: #333;
+                -- SCSS --
+                  $font-stack:    Helvetica, sans-serif;
+                  $primary-color: #333;
 
-                body {
-                  font: 100% $font-stack;
-                  color: $primary-color;
-                }
+                  body {
+                    font: 100% $font-stack;
+                    color: $primary-color;
+                  }
             </pre>
             <h4>Description</h4>
             <h5>Once Sass is installed, and you write your Sass file with all your styles, you can compile it to CSS using the sass command.</h5>
             <h5>The watch flag tells Sass to watch your source files for changes, and re-compile CSS each time you save your Sass.</h5>
             <h5>You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable.</h5>
+        </div>
+
+        <h4>Preprocessor: Nesting</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
+            <p id="prep">Text modified by <span>SASS</span></p>
+            <pre>
+                -- Command --
+                  $ sass --watch input.scss output.css
+
+                -- SCSS --
+                  #prep {
+                    span {
+                      color:blueviolet;
+                    }
+                  }
+            </pre>
+            <h4>Description</h4>
+            <h5>It has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.</h5>
         </div>
 </body>
 
