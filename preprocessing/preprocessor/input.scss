@@ -1,3 +1,7 @@
+/* 3 @use rules must be written before any other rules */
+
+@use 'partial';
+
 /* 1 */
 
 $font-stack:    Helvetica, sans-serif;
@@ -18,3 +22,5 @@ p {
     color:blueviolet;
   }
 }
+
+/* 4 */

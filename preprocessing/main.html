@@ -48,7 +48,7 @@
             <p id="prep">Text modified by <span>SASS</span></p>
             <pre>
                 -- Command --
-                  $ sass --watch input.scss output.css
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
 
                 -- SCSS --
                   #prep {
@@ -59,6 +59,23 @@
             </pre>
             <h4>Description</h4>
             <h5>It has a clear nested and visual hierarchy. CSS, on the other hand, doesn't.</h5>
+        </div>
+
+        <h4>Preprocessor: Partials</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
+            <p id="partial">Text modified by a partial</p>
+            <pre>
+                -- Command --
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
+
+                -- SCSS --
+                  @use 'partial';
+            </pre>
+            <h4>Description</h4>
+            <h5>This is a great way to modularize your CSS and help keep things easier to maintain.</h5>
+            <h5>A partial is a Sass file named with a leading underscore.</h5>
+            <h5>Sass partials are used with the @use rule.</h5>
         </div>
 </body>
 

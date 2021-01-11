@@ -1,3 +1,8 @@
+#partial {
+  color: green;
+}
+
+/* 3 @use rules must be written before any other rules */
 /* 1 */
 body {
   font: 100% Helvetica, sans-serif;
@@ -12,5 +17,7 @@ p {
 #prep span {
   color: blueviolet;
 }
+
+/* 4 */
 
 /*# sourceMappingURL=output.css.map */
