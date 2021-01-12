@@ -2,6 +2,10 @@
   color: green;
 }
 
+#module span {
+  color: #098;
+}
+
 /* 3 @use rules must be written before any other rules */
 /* 1 */
 body {

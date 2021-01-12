@@ -77,6 +77,21 @@
             <h5>A partial is a Sass file named with a leading underscore.</h5>
             <h5>Sass partials are used with the @use rule.</h5>
         </div>
+
+        <h4>Preprocessor: Modules</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
+            <p id="module">Span modified by a <span>module</span></p>
+            <pre>
+                -- Command --
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
+
+                -- SCSS --
+                  @use 'other';
+            </pre>
+            <h4>Description</h4>
+            <h5>You don't have to write all your Sass in a single file. You can split it up however you want with the @use rule.</h5>
+        </div>
 </body>
 
 </html>
