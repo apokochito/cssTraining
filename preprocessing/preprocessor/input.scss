@@ -5,7 +5,7 @@
 
 /* 1 */
 
-$font-stack:    Helvetica, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
@@ -20,8 +20,20 @@ p {
 
 #prep {
   span {
-    color:blueviolet;
+    color: blueviolet;
   }
 }
 
 /* 4 */
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box {
+  @include transform(rotate(5deg));
+  background-color: chocolate;
+}
+
+/* 5 */

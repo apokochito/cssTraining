@@ -92,6 +92,26 @@
             <h4>Description</h4>
             <h5>You don't have to write all your Sass in a single file. You can split it up however you want with the @use rule.</h5>
         </div>
+
+        <h4>Preprocessor: Mixins</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
+            <p class="box">Using a mixin!</span></p>
+            <pre>
+                -- Command --
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
+
+                -- SCSS --
+                  @mixin transform($property) {
+                    -webkit-transform: $property;
+                    -ms-transform: $property;
+                    transform: $property;
+                  }
+                  .box { @include transform(rotate(30deg)); background-color: chocolate;}
+            </pre>
+            <h4>Description</h4>
+            <h5>A mixin lets you make groups of CSS declarations that you want to reuse throughout your site, and you can pass parameters.</h5>
+        </div>
 </body>
 
 </html>
