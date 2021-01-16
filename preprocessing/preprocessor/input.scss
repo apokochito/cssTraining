@@ -8,6 +8,10 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
+%color-shared {
+  color:red;
+}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -37,3 +41,13 @@ p {
 }
 
 /* 5 */
+
+.inheritance {
+  @extend %color-shared;
+}
+
+.change {
+  @extend %color-shared;
+}
+
+/* 6 */

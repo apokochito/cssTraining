@@ -96,6 +96,52 @@
         <h4>Preprocessor: Mixins</h4>
         <div style="padding-left: 5%;">
           <h4>Example</h4>
+            <p class="box">Using a mixin!</p>
+            <pre>
+                -- Command --
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
+
+                -- SCSS --
+                  @mixin transform($property) {
+                    -webkit-transform: $property;
+                    -ms-transform: $property;
+                    transform: $property;
+                  }
+                  .box { @include transform(rotate(30deg)); background-color: chocolate;}
+            </pre>
+            <h4>Description</h4>
+            <h5>A mixin lets you make groups of CSS declarations that you want to reuse throughout your site, and you can pass parameters.</h5>
+        </div>
+
+        <h4>Preprocessor: Extend/Inheritance</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
+            <p class="inheritance">Using inheritance here!</p>
+            <h5 class="change">Also here!</h5>
+            <pre>
+                -- Command --
+                  $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
+
+                -- SCSS --
+                  %color-shared {
+                    color:red;
+                  }
+
+                  .inheritance {
+                    @extend %color-shared;
+                  }
+          
+                  .change {
+                    @extend %color-shared;
+                  }
+            </pre>
+            <h4>Description</h4>
+            <h5>Using @extend lets you share a set of CSS properties from one selector to another.</h5>
+        </div>
+
+        <h4>Preprocessor: Operators</h4>
+        <div style="padding-left: 5%;">
+          <h4>Example</h4>
             <p class="box">Using a mixin!</span></p>
             <pre>
                 -- Command --
