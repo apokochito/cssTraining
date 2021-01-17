@@ -142,21 +142,19 @@
         <h4>Preprocessor: Operators</h4>
         <div style="padding-left: 5%;">
           <h4>Example</h4>
-            <p class="box">Using a mixin!</span></p>
+            <p class="operators">Using operators!</span></p>
             <pre>
                 -- Command --
                   $ sass preprocessing/preprocessor/input.scss preprocessing/styles/output.css
 
                 -- SCSS --
-                  @mixin transform($property) {
-                    -webkit-transform: $property;
-                    -ms-transform: $property;
-                    transform: $property;
+                  .operators {
+                    background-color: chartreuse;
+                    width: 600px / 960px * 100%;
                   }
-                  .box { @include transform(rotate(30deg)); background-color: chocolate;}
             </pre>
             <h4>Description</h4>
-            <h5>A mixin lets you make groups of CSS declarations that you want to reuse throughout your site, and you can pass parameters.</h5>
+            <h5>Sass has a handful of standard math operators like +, -, *, /, and %.</h5>
         </div>
 </body>
 
